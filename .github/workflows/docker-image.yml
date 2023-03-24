@@ -27,7 +27,7 @@ jobs:
         
     - name: Build Docker Image
       run: |
-        docker container run -p 3000:3000 john1987/docker-graphql:0.0.2 .
+        docker build john1987/docker-graphql:0.0.2 .
         
     - name: Push Docker Image
       run: |
